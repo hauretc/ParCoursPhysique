@@ -1,0 +1,202 @@
+/*---------------------------------------------------*/
+/* Download fonts */
+/*---------------------------------------------------*/
+
+@font-face {
+    font-family: Cooper;
+    src: url('Fonts/cooper-hewitt/CooperHewitt-Heavy.otf');
+    font-weight: 800;
+}
+@font-face {
+    font-family: Cooper;
+    src: url('Fonts/cooper-hewitt/CooperHewitt-Semibold.otf');
+    font-weight: 600;
+}
+@font-face {
+    font-family: Cooper;
+    src: url('Fonts/cooper-hewitt/CooperHewitt-Book.otf');
+    font-weight: 400;
+}
+
+
+@font-face {
+    font-family: SourceSans;
+    src: url('Fonts/source-sans-pro/SourceSansPro-Black.ttf');
+    font-weight: 800;
+}
+@font-face {
+    font-family: SourceSans;
+    src: url('Fonts/source-sans-pro/SourceSansPro-Regular.ttf');
+    font-weight: 400;
+}
+@font-face {
+    font-family: SourceSans;
+    src: url('Fonts/source-sans-pro/SourceSansPro-Light.ttf');
+    font-weight: 200;
+}
+
+/*---------------------------------------------------*/
+/* Color palette */
+/*---------------------------------------------------*/
+
+:root{
+    --white : ghostwhite;
+    --lightgray : whitesmoke;
+    --black : #121212;
+    --yellow : #ffc857;
+    --light-blue : #119da4;
+    --dark-blue : #19647e;
+}
+
+
+/*---------------------------------------------------*/
+/* Typography */
+/*---------------------------------------------------*/
+
+body{
+
+    background : var(--white);
+    color : var(--secondary-dark);
+
+    font-family: SourceSans, sans-serif;
+    font-weight: 400;
+    font-size: 1.125rem;
+    
+    margin: 0;
+
+    text-align: center;
+
+}
+
+h1, h2, h3, h4 {
+    font-family: Cooper, sans-serif;
+    font-weight: 800;
+}
+
+h1 {
+    font-size: 9vw;
+    color : var(--yellow);
+    margin-bottom: 0;
+}
+
+.subheading {
+
+    display: block;
+    font-size : 4vw;
+
+    margin-top : 0;
+    margin-bottom: 2em;
+}
+
+h2{
+    font-size: 6vw;
+}
+
+.lightbg h2{
+    color : var(--dark-blue);
+}
+
+.darkbg h2 {
+    color : var(--white);
+}
+
+.bold{
+    font-weight : 800;
+}
+
+.lightbg .bold{
+    color : var(--light-blue);
+}
+
+.darkbg .bold{
+    color : var(--yellow);
+}
+
+
+
+
+/*---------------------------------------------------*/
+/* Links */
+/*---------------------------------------------------*/
+
+.btn{
+
+    background : var(--dark-blue);
+    color : var(--yellow);
+
+    font-family : inherit;
+    font-size: 4vw;
+    font-weight : 800;
+   
+    padding : 0.5em 1em;
+    border : none;
+    border-radius : 5px;
+
+    display : block;
+    width : 100%;
+    margin-top: 1em;
+
+}
+
+.btn-darkbg{
+    background : var(--light-blue);
+    color : var(--yellow);
+}
+
+.btn:hover,
+.btn:active,
+.btn:focus {
+    background : var(--light-blue);
+}
+
+.btn-darkbg:hover,
+.btn-darkbg:active,
+.btn-darkbg:focus {
+    background : var(--dark-blue);
+}
+
+
+/*---------------------------------------------------*/
+/* Layout */
+/*---------------------------------------------------*/
+
+header{
+
+    color: var(--white);
+    background-color: var(--dark-blue);
+
+    margin : 0;
+}
+
+.lightbg{
+    background-color: var(--white);
+}
+
+.darkbg{
+    background-color: var(--light-blue);
+    color :var(--lightgray)
+}
+
+.container{
+
+    width : 90%;
+    max-width : 800px;
+    margin : 0 auto;
+    padding : 1em ;
+
+}
+
+
+
+/*---------------------------------------------------*/
+/* Media queries */
+/*---------------------------------------------------*/
+
+
+/*  
+quand écran s'agrandit
+- change h1/subheading/btn font-size 
+- fixer largeur des paragraphes
+
+
+*/
