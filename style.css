@@ -127,6 +127,12 @@ ul{
     list-style-type: none;
 }
 
+.ul-tarifs-dplt{
+    color : gray;
+    font-size : 0.85em;
+    margin-top : 0.5em;
+}
+
 .bold{
     font-weight : 800;
 }
