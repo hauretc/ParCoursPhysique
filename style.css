@@ -44,6 +44,7 @@
     --lightgray : whitesmoke;
     --black : #121212;
     --yellow : #ffc857;
+    --dark-yellow: #f3be53; 
     --light-blue : #119da4;
     --dark-blue : #19647e;
 }
@@ -100,6 +101,28 @@ h2{
     color : var(--white);
 }
 
+h3{
+    margin-bottom: 0;
+}
+
+.lightbg h3{
+    color: var(--dark-yellow);
+}
+
+.darkbg h3{
+    color: var(--yellow);
+}
+
+p{
+    margin-top : 0.5em;;
+}
+
+ul{
+    margin-top : 0.5em;
+    /*text-align : left;*/
+    list-style-type: none;
+}
+
 .bold{
     font-weight : 800;
 }
@@ -121,9 +144,6 @@ h2{
 
 .btn{
 
-    background : var(--dark-blue);
-    color : var(--yellow);
-
     font-family : inherit;
     font-size: 4vw;
     font-weight : 800;
@@ -138,21 +158,40 @@ h2{
 
 }
 
-.btn-darkbg{
+header .btn {
     background : var(--light-blue);
     color : var(--yellow);
 }
 
-.btn:hover,
-.btn:active,
-.btn:focus {
-    background : var(--light-blue);
+.lightbg .btn{
+    background : var(--dark-blue);
+    color : var(--yellow);
 }
 
-.btn-darkbg:hover,
-.btn-darkbg:active,
-.btn-darkbg:focus {
+.darkbg .btn{
     background : var(--dark-blue);
+    color : var(--yellow);
+}
+
+header .btn:hover,
+header .btn:active,
+header .btn:focus{
+    background : var(--dark-yellow);
+    color : var(--light-blue);
+}
+
+.lightbg .btn:hover,
+.lightbg .btn:active,
+.lightbg .btn:focus{
+    background : var(--dark-yellow);
+    color : var(--dark-blue);
+}
+
+.darkbg .btn:hover,
+.darkbg .btn:active,
+.darkbg .btn:focus{
+    background : var(--yellow);
+    color : var(--dark-blue);
 }
 
 
