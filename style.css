@@ -155,13 +155,14 @@ p{
     font-family : inherit;
     font-size: 4vw;
     font-weight : 800;
+    text-decoration: none;
    
     padding : 0.5em 1em;
     border : none;
     border-radius : 5px;
 
     display : block;
-    width : 100%;
+    width : 90%;
     margin-top: 1em;
 
 }
