@@ -121,16 +121,14 @@ p{
     margin-top : 0.5em;;
 }
 
-ul{
+.tarifs-ul{
     margin-top : 0.5em;
-    /*text-align : left;*/
     list-style-type: none;
 }
 
-.ul-tarifs-dplt{
+.tarifs-dplt{
     color : gray;
     font-size : 0.85em;
-    margin-top : 0.5em;
 }
 
 .bold{
@@ -215,11 +213,12 @@ footer {
     color: var(--white);
     background-color: var(--dark-blue);
 
+    margin: 0;
+
 }
 
 header{
 
-    margin : 0;
     padding-bottom : 40px;
     clip-path: polygon(0 0, 100% 0, 100% calc(100% - var(--decalage)), 0 100%);
    
@@ -228,8 +227,7 @@ header{
 .lightbg{
 
     background-color: var(--white);
-
-    padding : 10px 0;
+    padding : 20px 0 10px;
 
 }
 
@@ -237,7 +235,7 @@ header{
     background-color: var(--light-blue);
     color :var(--lightgray);
 
-    padding-top : calc(10px + var(--decalage));
+    padding-top : calc(20px + var(--decalage));
     padding-bottom : calc(10px + var(--decalage));
     clip-path: polygon(0 0, 100% var(--decalage), 100% calc(100% - var(--decalage)), 0 100%);
 }
