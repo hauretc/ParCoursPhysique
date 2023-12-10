@@ -84,7 +84,6 @@ h1 {
 }
 
 .subheading {
-
     display: block;
     font-size : 4vw;
 
@@ -106,6 +105,7 @@ h2{
 }
 
 h3{
+    margin-top: 1.75em;
     margin-bottom: 0;
 }
 
@@ -118,7 +118,7 @@ h3{
 }
 
 p{
-    margin-top : 0.5em;;
+    margin-top : 0.5em;
 }
 
 .tarifs-ul{
@@ -163,7 +163,7 @@ p{
 
     display : block;
     width : 90%;
-    margin-top: 1em;
+    margin: 1em auto 0 auto;
 
 }
 
@@ -210,26 +210,20 @@ header .btn:focus{
 
 header,
 footer {
-
     color: var(--white);
     background-color: var(--dark-blue);
 
     margin: 0;
-
 }
 
 header{
-
     padding-bottom : 40px;
     clip-path: polygon(0 0, 100% 0, 100% calc(100% - var(--decalage)), 0 100%);
-   
 }
 
 .lightbg{
-
     background-color: var(--white);
     padding : 20px 0 10px;
-
 }
 
 .darkbg{
@@ -247,18 +241,27 @@ header{
 
 
 .container{
-
     width : 90%;
-    max-width : 800px;
+    max-width : 750px;
     margin : 0 auto;
     padding : 1em ;
+}
 
+.text{
+    max-width : 450px;
+    margin : 0 auto;
 }
 
 .moi img{
     width : 40%;
     border : 7px solid var(--yellow);
     border-radius: 50%;
+    margin-bottom : 4%;
+}
+
+.pratique-sec-text{
+    max-width : 600px;
+    margin : 0 auto;
 }
 
 footer{
@@ -276,6 +279,34 @@ footer{
 quand écran s'agrandit
 - change h1/subheading/btn font-size 
 - fixer largeur des paragraphes
-
-
 */
+
+@media (min-width : 800px) {
+
+    body{
+        font-size : 1.25rem;
+    }
+
+    h1{
+        font-size: 4.5rem;
+    }
+
+    .subheading{
+        font-size : 2rem;
+    }
+
+    h2{
+        font-size: 3rem;
+    }
+
+    h3{
+        font-size: 1.5rem;
+    }
+
+    .btn{
+        font-size : 1.5rem;
+        width : 50%;
+    }
+
+}
+
