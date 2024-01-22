@@ -81,6 +81,12 @@ h1 {
     font-size: 9vw;
     color : var(--yellow);
     margin-bottom: 0;
+    margin-top : 1.2rem;
+}
+
+.logo{
+    width : 20%;
+    margin-bottom : 0;
 }
 
 .subheading {
@@ -119,6 +125,10 @@ h3{
 
 p{
     margin-top : 0.5em;
+}
+
+.larger{
+    font-size : 4vw;
 }
 
 .tarifs-ul{
@@ -252,11 +262,18 @@ header{
     margin : 0 auto;
 }
 
-.moi img{
-    width : 40%;
+main img {
     border : 7px solid var(--yellow);
     border-radius: 50%;
     margin-bottom : 4%;
+}
+
+.quoi img{
+    width : 70%; 
+}
+
+.moi img{
+    width : 40%;
 }
 
 .pratique-sec-text{
@@ -269,6 +286,9 @@ footer{
     padding : 1em 0 0.5em 0;
 }
 
+footer a{
+    color : var(--white);
+}
 
 /*---------------------------------------------------*/
 /* Media queries */
@@ -279,20 +299,22 @@ footer{
 quand écran s'agrandit
 - change h1/subheading/btn font-size 
 - fixer largeur des paragraphes
+- change disposition header
 */
 
-@media (min-width : 800px) {
+@media (min-width : 700px) {
 
     body{
         font-size : 1.25rem;
     }
 
     h1{
-        font-size: 4.5rem;
+        font-size: 3.2rem;
     }
 
     .subheading{
-        font-size : 2rem;
+        font-size : 1.5rem;
+        margin : 0;
     }
 
     h2{
@@ -303,9 +325,32 @@ quand écran s'agrandit
         font-size: 1.5rem;
     }
 
+    .larger{
+        font-size : 1.5rem;
+    }
+
     .btn{
         font-size : 1.5rem;
-        width : 50%;
+        width : fit-content;
+    }
+
+    .logo-text{
+        display : flex ;
+        flex-direction : row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .logo{
+        width : 25%;
+    }
+
+    .logo-text .text{
+        display: flex;
+        flex-direction: column;
+        justify-content : end;
+        gap : 1rem;
+        text-align: right;
     }
 
 }
